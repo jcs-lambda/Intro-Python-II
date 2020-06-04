@@ -14,7 +14,7 @@ class Player(object):
         try:
             self.current_room = getattr(self.current_room, f'{direction}_to')
             return True
-        except AttributeError:# as ae:
+        except AttributeError:
             # no room in that direction
             return False
 
